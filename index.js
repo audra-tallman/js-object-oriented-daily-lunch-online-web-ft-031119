@@ -1,7 +1,7 @@
 
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
-const Neighborhood = (() => {
+class Neighborhood = (() => {
   let neighborhoodIds = 1;
   return class {
     constructor(name) {
