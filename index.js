@@ -1,14 +1,15 @@
 
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
-class Neighborhood = (() => {
-  let neighborhoodId = 1;
-  return class { 
+const Neighborhood = (() => {
+  let neighborhoodIds = 1;
+  return class {
     constructor(name) {
-    this.name = name;
-    this.id = ++neighborhoodId;
-    store.neighborhoods.push(this);
-  }
+      this.id = neighborhoodIds++;
+      this.name = name;
+      store.neighborhoods.push(this);
+    }
+  
   deliveries() {
   return store.deliveries.filter(delivery =>
     delivery.neighborhoodrId == this.id);
