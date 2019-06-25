@@ -12,6 +12,15 @@ class Neighborhood {
     this.id = ++neighborhoodId;
     store.neighborhood.push(this);
   }
+  deliveries() {
+  return store.deliveries.filter(delivery => {
+    return delivery.customerId == this.id;
+   });
+  }
+  meals() {
+    return store.meals.filter(meal => {
+      return meal.customerId == this.id;
+    });
 }
 
 
