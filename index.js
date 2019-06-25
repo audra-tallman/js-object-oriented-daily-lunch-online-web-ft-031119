@@ -62,11 +62,14 @@ class Meal {
     }
     deliveries() {
     return store.deliveries.filter(delivery => {
-      return delivery.mealId === this.id;
-     })
+      return delivery.mealId === this.id);
+     }
      customers(){
     return this.deliveries().map(delivery => delivery.customer());
     }
+     static byPrice(){
+    return store.meals.sort((a, b) => a.price < b.price);
+  }
   }
 }
 
