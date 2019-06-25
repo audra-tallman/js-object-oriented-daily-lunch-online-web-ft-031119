@@ -8,7 +8,8 @@ let deliveryId = 0;
 
 class Neighborhood = (() => {
   let neighborhoodIds = 1;
-  constructor(name) {
+  return class { 
+    constructor(name) {
     this.name = name;
     this.id = ++neighborhoodId;
     store.neighborhood.push(this);
