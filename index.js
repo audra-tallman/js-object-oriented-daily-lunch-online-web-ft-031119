@@ -10,6 +10,7 @@ class Neighborhood {
       this.id = neighborhoodIds++;
       this.name = name;
       store.neighborhoods.push(this);
+      return this;
     }
   
   deliveries() {
