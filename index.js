@@ -38,14 +38,10 @@ class Customer {
     return this;
   }
   deliveries() {
-  return store.deliveries.filter(delivery => {
-    return delivery.customerId === this.id;
-   });
+  return store.deliveries.filter(delivery => delivery.customerId === this.id);
   }
   meals() {
-    return store.meals.filter(meal => {
-      return meal.customerId === this.id;
-    });
+    return store.meals.filter(meal => meal.customerId === this.id);
   }
   totalSpent() {
     return this.meals().reduce((total, meal) => (total += meal.price), 0);
