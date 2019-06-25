@@ -14,11 +14,11 @@ class Neighborhood {
   
   deliveries() {
   return store.deliveries.filter(delivery =>
-    delivery.neighborhoodrId === this.id);
+    delivery.neighborhoodId === this.id);
   }
   customers() {
     return store.customers.filter(customer =>
-    customer.neighborhoodrId === this.id);
+    customer.neighborhoodId === this.id);
   }
   meals() {
     const allMeals = this.customers().map(customer => customer.meals());
@@ -29,7 +29,7 @@ class Neighborhood {
 
 
 class Customer {
-  constructor(name) {
+  constructor(name, neighborhoodrId) {
     this.name = name;
     this.id = ++customerId;
     store.customers.push(this);
