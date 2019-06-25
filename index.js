@@ -65,12 +65,10 @@ class Meal {
     return this.deliveries().map(delivery => delivery.customer());
     }
     static byPrice() {    
-    return store.meals.sort(
-      function(m1, m2) {
+    return store.meals.sort(function(m1, m2) {
         return m2.price - m1.price
          })
       }
-         
 }
 
 class Delivery {
