@@ -22,7 +22,7 @@ class Neighborhood {
       return [...new Set(merged)];
     }
   }
-
+  let neighborhoodIds = 1;
 
 class Customer {
   constructor(name) {
