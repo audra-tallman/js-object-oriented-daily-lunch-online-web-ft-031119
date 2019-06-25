@@ -60,3 +60,14 @@ class Meal {
     return this; 
     }
 }
+
+class Delivery {
+  constructore(mealId, neighborhoodId, customerId) {
+    this.mealId = mealId;
+    this.neighborhoodId = neighborhoodId; 
+    this.customerId = customerId;
+    this.id = ++mealId; 
+    store.meals.push(this);
+    return this; 
+    }
+}
