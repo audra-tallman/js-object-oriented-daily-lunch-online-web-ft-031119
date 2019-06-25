@@ -19,12 +19,12 @@ class Neighborhood {
   }
   customers() {
     return store.customers.filter(customer => {
-      return meal.customerId == this.id;
+      return meal.neighborhoodrId == this.id;
     });
   }
   meals() {
     return store.meals.filter(meal => {
-      return meal.customerId == this.id;
+      return meal.neighborhoodrId == this.id;
     });
 }
 
