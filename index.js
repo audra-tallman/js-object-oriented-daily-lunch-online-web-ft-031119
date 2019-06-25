@@ -19,7 +19,7 @@ class Neighborhood {
   }
   customers() {
     return store.customers.filter(customer => {
-      return meal.neighborhoodrId == this.id;
+      return customer.neighborhoodrId == this.id;
     });
   }
   meals() {
