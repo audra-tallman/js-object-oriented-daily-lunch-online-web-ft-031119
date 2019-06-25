@@ -3,7 +3,6 @@ let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
   let neighborhoodIds = 1;
   let customerId = 1;
-  let 
 
 
 class Neighborhood {
