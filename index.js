@@ -10,14 +10,12 @@ class Neighborhood = (() => {
     store.neighborhoods.push(this);
   }
   deliveries() {
-  return store.deliveries.filter(delivery => {
-    delivery.neighborhoodrId == this.id;
-   });
+  return store.deliveries.filter(delivery =>
+    delivery.neighborhoodrId == this.id);
   }
   customers() {
-    return store.customers.filter(customer => {
-      return customer.neighborhoodrId == this.id;
-    });
+    return store.customers.filter(customer =>
+    customer.neighborhoodrId == this.id);
   }
   meals() {
     const allMeals = this.customers().map(customer => customer.meals());
