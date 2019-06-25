@@ -34,6 +34,7 @@ class Customer {
     this.neighborhoodId = neighborhoodId
     this.id = ++customerId;
     store.customers.push(this);
+    return this;
   }
   deliveries() {
   return store.deliveries.filter(delivery => {
