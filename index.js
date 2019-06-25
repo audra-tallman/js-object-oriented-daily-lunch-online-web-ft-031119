@@ -20,9 +20,10 @@ class Neighborhood = (() => {
     });
   }
   meals() {
-    return store.meals.filter(meal => {
-      return meal.neighborhoodrId == this.id;
-      });
+    const allMeals = this.customers().map(customer => customer.meals());
+      const merged = [].concat.apply([], allMeals);
+      return [...new Set(merged)];
+    }
     }
   }
 
