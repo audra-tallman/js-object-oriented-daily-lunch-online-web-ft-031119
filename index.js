@@ -1,9 +1,7 @@
 
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
-class Neighborhood = (() => {
-  let neighborhoodId = 1;
-  return class {
+class Neighborhood {
     constructor(name) {
       this.id = neighborhoodIds++;
       this.name = name;
@@ -24,7 +22,6 @@ class Neighborhood = (() => {
       return [...new Set(merged)];
     }
   }
-})
 
 
 class Customer {
