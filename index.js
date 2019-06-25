@@ -22,8 +22,8 @@ class Neighborhood = (() => {
       const merged = [].concat.apply([], allMeals);
       return [...new Set(merged)];
     }
-  };
-})();
+  }
+}) ();
 
 
 class Customer {
