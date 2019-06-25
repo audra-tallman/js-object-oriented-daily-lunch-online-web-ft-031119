@@ -1,6 +1,11 @@
 
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
+  let neighborhoodIds = 1;
+  let customerId = 1;
+  let 
+
+
 class Neighborhood {
     constructor(name) {
       this.id = neighborhoodIds++;
@@ -22,7 +27,7 @@ class Neighborhood {
       return [...new Set(merged)];
     }
   }
-  let neighborhoodIds = 1;
+
 
 class Customer {
   constructor(name) {
