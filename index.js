@@ -70,7 +70,7 @@ class Meal {
 }
 
 class Delivery {
-  constructore(mealId, neighborhoodId, customerId) {
+  constructor(mealId, neighborhoodId, customerId) {
     this.mealId = mealId;
     this.neighborhoodId = neighborhoodId; 
     this.customerId = customerId;
