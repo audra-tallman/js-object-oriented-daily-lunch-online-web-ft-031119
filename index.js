@@ -14,11 +14,11 @@ class Neighborhood {
   
   deliveries() {
   return store.deliveries.filter(delivery =>
-    delivery.neighborhoodrId == this.id);
+    delivery.neighborhoodrId === this.id);
   }
   customers() {
     return store.customers.filter(customer =>
-    customer.neighborhoodrId == this.id);
+    customer.neighborhoodrId === this.id);
   }
   meals() {
     const allMeals = this.customers().map(customer => customer.meals());
