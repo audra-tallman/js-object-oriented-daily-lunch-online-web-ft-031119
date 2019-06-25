@@ -9,6 +9,7 @@ let deliveryId = 0;
 class Customer {
   constructor(name) {
     this.name = name;
-    this.id = customerId
+    this.id = ++customerId;
+    store.customers.push(this);
   }
 }
