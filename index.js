@@ -2,7 +2,7 @@
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
 class Neighborhood = (() => {
-  let neighborhoodIds = 1;
+  let neighborhoodId = 1;
   return class {
     constructor(name) {
       this.id = neighborhoodIds++;
