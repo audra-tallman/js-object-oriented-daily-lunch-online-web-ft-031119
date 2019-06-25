@@ -7,7 +7,7 @@ let customerId = 0;
 let deliveryId = 0;
 
 class Neighborhood = (() => {
-  
+  let neighborhoodIds = 1;
   constructor(name) {
     this.name = name;
     this.id = ++neighborhoodId;
